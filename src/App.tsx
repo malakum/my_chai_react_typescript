@@ -7,9 +7,17 @@ import { ChaiCard } from './components/ChaiCard.tsx'
 import { Counter } from './components/Counter.tsx'
 import { OrderForm } from './components/OrderForm.tsx'
 import { Card } from './components/Card.tsx'
+import { ChaiList } from './components/ChaiList.tsx'
+//import type{Chai} from '../types.ts'
 
 function App() {
  // const [count, setCount] = useState(0)
+ const menu = [ 
+     {id :1 , name : "Masala", price :25},
+     {id :2 , name :" Ginger" , price :50},
+     {id :3 , name : "Lemon" , price :50},
+     ];
+
 
   return (
     <>
@@ -22,6 +30,9 @@ function App() {
            <div>
           <Counter/>
           </div>
+           <div>
+             <ChaiList />
+           </div>
           <div>
              <OrderForm 
               onSubmit ={(order) =>{
