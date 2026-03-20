@@ -5,6 +5,8 @@
 import './App.css'
 import { ChaiCard } from './components/ChaiCard.tsx'
 import { Counter } from './components/Counter.tsx'
+import { OrderForm } from './components/OrderForm.tsx'
+import { Card } from './components/Card.tsx'
 
 function App() {
  // const [count, setCount] = useState(0)
@@ -20,6 +22,17 @@ function App() {
            <div>
           <Counter/>
           </div>
+          <div>
+             <OrderForm 
+              onSubmit ={(order) =>{
+                console.log("Placed", order.name , order.cups);
+                  }}
+                />
+          </div>
+          <div> 
+           <Card title = "Chai aur Typescript"
+                 footer = "page1" />
+            </div>
       {/* <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
