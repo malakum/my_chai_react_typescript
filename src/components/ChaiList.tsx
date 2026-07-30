@@ -12,6 +12,7 @@ const chai: ChaiType[] = [
   { id: 1, name: "Masala", price: 25 },
   { id: 2, name: "Ginger", price: 50 },
   { id: 3, name: "Lemon", price: 40 },
+  {id :4 , name: "Green" , price :20},
 ];
 
 export function ChaiList() {
@@ -19,7 +20,7 @@ export function ChaiList() {
     <div>
       {chai.map((item) => (
         <div key={item.id}>
-          <h3>{item.name}</h3>
+          <h4>{item.name}</h4>
           <p>£{item.price}</p>
         </div>
       ))}

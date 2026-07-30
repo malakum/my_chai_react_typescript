@@ -14,12 +14,8 @@ export function OrderForm ({onSubmit}: OrderFormProps) {
                }
 
         return (
-        //        <section>
-        //      <h2> {name} </h2>
-        //       <div> {cups} </div>
-              
-        //    </section>
-         
+               
+         <div>
   
         <form onSubmit={handleSubmit}>
               <label> ChaiName </label>
@@ -37,6 +33,14 @@ export function OrderForm ({onSubmit}: OrderFormProps) {
                 />
                <button type = "submit"> Place Order </button>
              <div> OrderForm </div> </form>
+             <p> {name } </p>
+             <p> {cups}</p>
+             </div>
+          //    <section>
+          //    <h2> {name} </h2>
+          //     <div> {cups} </div>
+              
+          //  </section>
             
             )
           
